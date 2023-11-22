@@ -1,0 +1,320 @@
+.main {
+    background-color: black;
+    height: 100vh;
+    width: 100%;
+}
+
+body {
+    background-color: black;
+    font-family: 'Nunito', sans-serif;
+}
+
+.first {
+    width: 100%;
+    height: 85vh;
+    display: flex;
+}
+.second {
+    width: 100%;
+    height: 15vh;
+    background: linear-gradient(
+        90deg,
+        rgba(172, 43, 151, 1) 0%,
+        rgba(132, 104, 200, 1) 50%,
+        rgba(92, 145, 235, 1) 100%
+    );
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.left-menu {
+    display: flex;
+    flex-direction: column;
+}
+
+.catalog {
+    width: 80%;
+    background-color: #121212;
+    height: 80vh;
+    margin: 0.7vh 5vh 0 0;
+    border-radius: 9px;
+}
+
+.catalog-nav {
+    background-color: #121212;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    margin: 10px 10px 5px 10px;
+}
+
+.catalog-register {
+    background-color: transparent;
+    color: #b3b3b3;
+}
+.catalog-login {
+    background-color: white;
+    color: black;
+    width: 150px;
+    margin-left: 20px;
+    border-radius: 25px;
+}
+.catalog-login,
+.catalog-register {
+    appearance: none;
+    border: none;
+    height: 40px;
+    font-weight: 600;
+}
+.centersecondcontent {
+    width: 90%;
+    margin: 0 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.secondinfo {
+    width: 70%;
+}
+.extract {
+    text-transform: uppercase;
+    font-size: 0.75rem;
+}
+
+.registerinfo {
+    font-size: 1rem;
+}
+
+.extract,
+.registerinfo {
+    color: white;
+    font-weight: 400;
+}
+.registerbutton {
+    width: 243px;
+    height: 50px;
+    border-radius: 25px;
+    border: none;
+    font-weight: 700;
+    font-size: 1rem;
+}
+.logospotify {
+    width: 78px;
+    height: 24px;
+}
+
+.nav {
+    background-color: #121212;
+    width: 90%;
+    height: 20vh;
+    border-radius: 8px;
+    margin-left: 20px;
+    margin: 5px 8px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+.nav ul {
+    list-style: none;
+    color: #b3b3b3;
+    margin-top: 5px;
+    margin-left: 15px;
+    font-weight: 700;
+    font-size: 1rem;
+}
+.navico {
+    font-size: 22px;
+    color: #b3b3b3;
+    margin-right: 20px;
+}
+.icoBurger {
+    display: none;
+}
+
+.library {
+    background-color: #121212;
+    width: 90%;
+    border-radius: 8px;
+    margin-left: 20px;
+    margin: 5px 8px;
+    display: flex;
+    flex-direction: column;
+}
+.titlelib {
+    flex-direction: row;
+    justify-content: space-between;
+}
+.buttonlib {
+    color: #b3b3b3;
+    background-color: transparent;
+    border: none;
+    font-weight: 700;
+    font-size: 1rem;
+    height: 40px;
+    margin-left: 15px;
+}
+.buttonplus {
+    color: #b3b3b3;
+    border: none;
+    background-color: transparent;
+    font-weight: 700;
+    font-size: 1rem;
+    height: 40px;
+}
+.playlist {
+    height: 55vh;
+    overflow: scroll;
+}
+.playlist-card {
+    background-color: #242424;
+    color: #ffffff;
+    border-radius: 8px;
+    margin: 8px;
+    margin-bottom: 15px;
+}
+.playlist-button {
+    color: black;
+    font-weight: 700;
+    border: none;
+    border-radius: 20px;
+    height: 40px;
+    margin-left: 15px;
+}
+.playlist-button:hover {
+    transform: scale(1.04);
+}
+.catalog-login:hover {
+    transform: scale(1.04);
+    color: #121212;
+}
+
+.block {
+    display: block;
+}
+
+.content-header {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 20px 5%;
+    align-items: center;
+    height: 50px;
+}
+.content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background: linear-gradient(
+        180deg,
+        rgba(36, 36, 36, 1) 0%,
+        rgba(18, 18, 18, 1) 100%
+    );
+}
+.close {
+    display: none;
+}
+@media screen and (max-width: 900px) {
+    .catalog {
+        width: 100%;
+        background-color: #121212;
+        height: 100vh;
+        margin: 0;
+    }
+    .first {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .left-menu {
+        display: none;
+        
+    }
+    .second {
+        display: none;
+    }
+    .nav {
+        width: 100%;
+        margin: 0;
+    }
+    .icoBurger {
+        display: block;
+    }
+    .catalog-nav-buttons {
+        display: none;
+    }
+    .catalog-card-container {
+        display: flex;
+        flex-direction: column;
+    }
+    .content-header {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .catalog-card {
+        width: 80%;
+        height: 200px;
+        border-radius: 15px;
+    }
+    .close { 
+        display: block;
+
+    }
+    
+}
+.catalog-card-container {
+    width: 90%;
+    margin: 40px 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.catalog-card {
+    width: 15%;
+    height: 200px;
+    background-color: #272727;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    margin-top: 15px;
+}
+.catalog-card h4 {
+    padding-left: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.catalog-card p {
+    padding-left: 5px;
+    font-size: 0.8rem;
+}
+.catalog-card-img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover; /* Etire img de façon homogene */
+    border-radius: 15px 15px 0 0;
+}
+
+.display-all {
+    color: #b3b3b3;
+    font-size: 14px;
+}
+.playlist-title {
+    color: white;
+    font-size: 19px;
+}
+.playlist-title:hover {
+    /* Surlignage */
+    text-decoration: underline;
+}
+.activeLink {
+    display: block;
+}
+.hidden {
+    display: none;
+}
+a:hover,
+i:hover,
+button:hover {
+    color: white;
+}

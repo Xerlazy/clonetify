@@ -1,0 +1,16 @@
+body {
+    margin: 0;
+}
+
+h2,
+h1,
+p,
+ul {
+    margin-block-start: 0;
+    margin-block-end: 0;
+    padding-inline-start: 0;
+}
+a {
+    text-decoration: none;
+    color: #b3b3b3;
+}

@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>
+            Spoticlone - Lecteur web: de la musique pour tout le monde
+        </title>
+        <!-- Crée un commentaire ctrl K+C et retirer le com ctrl K + U -->
+        <link rel="stylesheet" href="./style/reset.css" />
+        <link rel="stylesheet" href="./style/style.css" />
+        <!-- Importer Google fonts ici -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;800&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+        <!-- Fin import Google fonts -->
+    </head>
+    <body>
+        <div class="main">
+            <div class="first">
+                <div class="left-menu">
+                    <div class="nav">
+                        <a href="#" class="close"><span class="material-symbols-outlined">
+                            close
+                            </span></a>
+                        <ul>
+                            <li>
+                                <img
+                                    src="./medias/Spotify_Logo_RGB_White.png"
+                                    alt="logospotify"
+                                    class="logospotify"
+                                />
+                            </li>
+                            <li>
+                                <a href="#"
+                                    ><i class="fa-solid fa-house navico"></i
+                                    >Accueil</a
+                                >
+                            </li>
+                            <li>
+                                <a href="#"
+                                    ><i
+                                        class="fa-solid fa-magnifying-glass navico"
+                                    ></i
+                                    >Recherche</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="library">
+                        <div class="titlelib">
+                            <button class="buttonlib">
+                                <i
+                                    class="fa-solid fa-layer-group fa-rotate-90 navico"
+                                ></i
+                                >Bibliothèque
+                            </button>
+                            <button class="buttonplus">
+                                <i class="fa-solid fa-plus navico"></i>
+                            </button>
+                        </div>
+                        <div class="playlist">
+                            <div class="playlist-card">
+                                <h2 class="playlist-create">
+                                    Créez votre première playlist
+                                </h2>
+                                <p class="simple-create">
+                                    C'est simple,nous allons vous aider
+                                </p>
+                                <button class="playlist-button">
+                                    Créer une playlist
+                                </button>
+                            </div>
+                            <div class="playlist-card">
+                                <h2 class="playlist-create">
+                                    Créez votre première playlist
+                                </h2>
+                                <p class="simple-create">
+                                    C'est simple,nous allons vous aider
+                                </p>
+                                <button class="playlist-button">
+                                    Créer une playlist
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="catalog hiddenC">
+                    <div class="catalog-nav">
+                        <div class="catalog-icon">
+                            <i
+                                class="fa-solid fa-chevron-left block navico"
+                            ></i>
+                            <i
+                                class="fa-solid fa-chevron-right block navico"
+                            ></i>
+                        </div>
+                        <div class="catalog-nav-buttons">
+                            <button class="catalog-register">Premium</button>
+                            <button class="catalog-register">Assitance</button>
+                            <button class="catalog-register">
+                                Télécharger
+                            </button>
+                        </div>
+                        <div class="catalog-nav-buttons">
+                            <button class="catalog-register">S'inscrire</button>
+                            <button class="catalog-login">Se connecter</button>
+                        </div>
+                        <a
+                            href="javascript:void(0);"
+                            class="icoBurger"
+                            onclick="myFunction()"
+                        >
+                            <i class="fa fa-bars"></i
+                        ></a>
+                    </div>
+                    <div class="content">
+                        <div class="content-header">
+                            <h2 class="playlist-title">Playlists Spotify</h2>
+                            <p class="display-all">Tout afficher</p>
+                        </div>
+
+                        <div class="catalog-card-container">
+                            <div class="catalog-card">
+                                <img
+                                    class="catalog-card-img"
+                                    src="/medias/marioMixtape_resised.jpg"
+                                    alt="MixTape Mario"
+                                />
+                                <h4>Today top hits</h4>
+                                <p>Dua lipa want you to go to hospital</p>
+                            </div>
+                            <div class="catalog-card">
+                                <img
+                                    class="catalog-card-img"
+                                    src="/medias/marioMixtape.jpg"
+                                    alt="MixTape Mario"
+                                />
+                                <h4>Today top hits</h4>
+                                <p>Dua lipa want you to go to hospital</p>
+                            </div>
+                            <div class="catalog-card">
+                                <img
+                                    class="catalog-card-img"
+                                    src="/medias/marioMixtape.jpg"
+                                    alt="MixTape Mario"
+                                />
+                                <h4>Today top hits</h4>
+                                <p>Dua lipa want you to go to hospital</p>
+                            </div>
+                            <div class="catalog-card">
+                                <img
+                                    class="catalog-card-img"
+                                    src="/medias/marioMixtape.jpg"
+                                    alt="MixTape Mario"
+                                />
+                                <h4>Today top hits</h4>
+                                <p>Dua lipa want you to go to hospital</p>
+                            </div>
+                            <div class="catalog-card">
+                                <img
+                                    class="catalog-card-img"
+                                    src="/medias/marioMixtape.jpg"
+                                    alt="MixTape Mario"
+                                />
+                                <h4>Today top hits</h4>
+                                <p>Dua lipa want you to go to hospital</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="second">
+                <div class="centersecondcontent">
+                    <div class="secondinfo">
+                        <p class="extract">Extrait sur Spoticlone</p>
+                        <p class="registerinfo">
+                            Inscrivez-vous pour écouter titres et podcasts en
+                            illimité, avec quelques coupures pubs. Pas besoin de
+                            carte de crédit.
+                        </p>
+                    </div>
+                    <button class="registerbutton">
+                        S'incrire gratuitement
+                    </button>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script
+        src="https://kit.fontawesome.com/06d3b2df00.js"
+        crossorigin="anonymous"
+    ></script>
+    <script src="/js/scriptNav.js"></script>
+</html>

@@ -308,6 +308,8 @@ body {
     text-decoration: underline;
 }
 .activeLink {
+
+    width: 100%;
     display: block;
 }
 .hidden {
